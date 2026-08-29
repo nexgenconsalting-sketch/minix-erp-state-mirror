@@ -1,0 +1,32 @@
+{
+  "backups": {
+    "configured": false
+  },
+  "domain": {
+    "dns_configured": false,
+    "purchased": true
+  },
+  "edge": {
+    "cloudflare_tunnel_configured": false,
+    "public_hostname_configured": false
+  },
+  "lifecycle": "provisioning",
+  "release": {
+    "deployed": false
+  },
+  "schema_version": 1,
+  "server": {
+    "location": "Helsinki",
+    "os": "Ubuntu 24.04 LTS",
+    "plan": "CX23",
+    "provider": "Hetzner Cloud"
+  },
+  "services": {
+    "containers_count": 0,
+    "docker_compose": "5.5.0",
+    "docker_engine": "29.7.2"
+  },
+  "state_mirror": {
+    "configured": true
+  }
+}
