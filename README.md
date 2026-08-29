@@ -1,11 +1,9 @@
-# MINIX ERP state mirror
+# MINIX ERP signed operational state
 
-Public signed status mirror. It contains only sanitized infrastructure status.
+This repository contains a deliberately minimal, signed operational-state snapshot.
 
-Files:
-- `state.json` — sanitized status
-- `state.json.sig` — Ed25519 signature
-- `state-signing.pub` — verification key
-- `state.json.sha256` — SHA-256 digest
+Only these files are permitted: `README.md`, `state.json`, `state.json.sig`, `state.json.sha256`, and `state-signing.pub`.
 
-No secrets, addresses, DNS records, application data, backups, or private keys are published.
+The snapshot intentionally excludes secrets, private keys, tokens, passwords, IP addresses, DNS records, origin or Tunnel URLs, server identifiers and names, logs, timestamps, personal data, business data, `.env` content, databases, and uploads.
+
+Verify `state.json` with `state-signing.pub` before relying on it. The trust anchor is the separately pinned public key in the private MINIX ERP repository.
